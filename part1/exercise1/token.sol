@@ -36,8 +36,13 @@ contract Pausable is Ownership{
 contract Token is Pausable{
     mapping(address => uint) public balances;
 
-    function transfer(address to, uint value) ifNotPaused public{
+    function transfer(address to, uint value) ifNotPaused public {
+        uint256 preBalanceOfSender = balances[msg.sender];
+        uint256 preBalanceOfRecipient = balances[to];
+        // Modify balances 
         balances[msg.sender] -= value;
         balances[to] += value;
+        require(balances[msg.sender] <= preBalanceOfSender);
+        require(balances[to] >= preBalanceOfRecipient);
     }
 }
