@@ -1,9 +1,5 @@
 
-
-#### To use:
-
-
-# Part 3: Fuzzing arithmetics and functions
+# Part 3: Fuzzing Uniswap V2 (Part 1)
 
 ## Sections
 
@@ -18,7 +14,7 @@ The slides for this part can be found [here](./Echidna-Streaming-Session-Part-3.
 
 ## Video Presentation
 
-The video presentation for this part can be found on [YouTube](https://www.youtube.com/watch?v=n0RaKKVTGvA).
+The video presentation for this part can be found on [YouTube](https://www.youtube.com/watch?v=n0RaKKVTGvA). For the updates to `testSwap()`, please look at the Youtube link in [part4](../part4/).
 
 ## Prerequisites 
 
